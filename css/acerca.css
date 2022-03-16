@@ -1,0 +1,76 @@
+/* Parallax css */
+
+.bgimg1{
+    /* display: table; */
+    width: 100%;
+    /* height: 50vh; */
+    background: url(../img/fondo2.jpg) top center fixed;
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media only screen and (max-device-width: 425px){
+    .bgimg1{
+      background-size: 250%;
+      background-repeat: no-repeat;
+      /* background-position-x: -410px; */
+    }
+}
+
+.m-v-v{
+    background-color: rgba(238, 255, 198, 0.247);
+    border: 4px double wheat;
+    width: 350px;
+    height: 200px;
+    /* height: auto; */
+}
+
+.fundadores, .logo_about{
+    width: 50%;
+    border-radius: 50px;
+}
+
+.barr1{
+    background-color: rgb(70, 115, 2);
+    /* border: 4px solid green; */
+    border-radius: 50px;
+    width: 150vh;
+    height: 7px;
+}
+
+.barr2{
+    background-color: rgb(70, 115, 2);
+    border-radius: 50px;
+    height: 50vh;
+    width: 5px;
+}
+
+.text-about{
+    font-size: 25px;
+    width: 40%;
+}
+
+@media only screen and (max-device-width: 425px){
+    .barr2{
+        display: none;
+      }
+
+    .text-about{
+      width: auto;
+    }
+
+    .fundadores, .logo_about{
+        width: 100%;
+    }
+
+    .barr3{
+        background-color: rgb(70, 115, 2);
+        border-radius: 50px;
+        width: 50vh;
+        height: 7px;
+    }
+}

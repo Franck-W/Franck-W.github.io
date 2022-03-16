@@ -1,0 +1,21 @@
+
+.parallax {
+    /* Imagen de fondo*/
+    background-image: url("../img/Fondo2.jpg");
+  
+    /* Alto especifico */
+    min-height: 500px;
+  
+    /* Efecto  */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Efecto para smartphone */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
